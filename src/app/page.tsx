@@ -4,6 +4,7 @@ import React from 'react';
 import { NextUIProvider } from '@nextui-org/react';
 import { Card, CardBody } from '@nextui-org/card';
 import Link from 'next/link';
+import { ArrowBack } from '@/components/ArrowBack/ArrowBack';
 
 export default function Home() {
   const list = [
@@ -28,8 +29,10 @@ export default function Home() {
 
   return (
     <NextUIProvider>
-      <main className="flex min-h-screen flex-col items-center justify-between p-24 text-dark">
-        <div className="z-10 max-w-5xl w-full flex flex-col items-center justify-between gap-y-4 font-mono text-sm">
+      <main className="flex min-h-screen flex-col items-center gap-y-5 p-5 text-dark">
+        <ArrowBack href={'/'}/>
+
+        <section className="z-10 max-w-5xl w-full flex flex-col items-center justify-between gap-y-4 font-mono text-sm">
           <header className={'flex flex-col items-center justify-between gap-y-3'}>
             <h1 className={'text-2xl font-bold'}>The Goal</h1>
             <p className={'text-sm text-gray text-center'}>Focus on the health benefits you need. <br />Balanced
@@ -48,7 +51,7 @@ export default function Home() {
                   >
                     <CardBody
                       className="overflow-visible p-0 text-dark flex flex-row items-center justify-between gap-x-2">
-                      <p className={'text-base font-medium w-1/2 pl-3'}>{item.title}</p>
+                      <p className={'text-base font-semibold w-1/2 pl-3'}>{item.title}</p>
                       <div className={'w-1/2 h-44'}>
                         <img
                           alt={item.title}
@@ -62,7 +65,7 @@ export default function Home() {
               ))}
             </div>
           </div>
-        </div>
+        </section>
       </main>
     </NextUIProvider>
   );
