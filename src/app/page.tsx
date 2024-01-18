@@ -8,7 +8,7 @@ import { ArrowBack } from '@/components/ArrowBack/ArrowBack';
 import { PageHeader } from '@/components/PageHeader/PageHeader';
 
 export default function Home() {
-  const list = [
+  const goalsList = [
     {
       title: 'Lose Weight',
       img: '/goal_1_LoseWeight.png',
@@ -45,10 +45,10 @@ export default function Home() {
           <div className={'flex flex-col items-center justify-between gap-y-4'}>
             <h4 className={'text-sm font-bold'}>What are your goals?</h4>
             <div className="gap-4 grid grid-cols-1 sm:grid-cols-2">
-              {list.map((item, index) => (
+              {goalsList.map((item, index) => (
                 <Link key={index} href={'/measureYourself'} onClick={() => selectGoal(item.title)}>
                   <Card
-                    className={'w-44 h-44 shadow-none border border-solid border-[#E1E1E1] bg-gradient-to-b from-[#F1F1F1] to-[#fff] '}
+                    className={'w-44 h-44 shadow-none border border-solid border-[#E1E1E1] bg-gradient-to-b from-[#F1F1F1] to-[#fff]'}
                   >
                     <CardBody
                       className="overflow-visible p-0 text-dark flex flex-row items-center justify-between gap-x-2">
