@@ -9,7 +9,7 @@ interface IProps {
 
 export const CustomButton: FC<IProps> = ({ title, isDisabled, handler }) => {
   return (
-    <div className="h-[50px]">
+    <div className="h-[50px] w-full">
       <Button isDisabled={isDisabled} fullWidth color="success" className={'text-white text-lg font-bold'}
               onClick={handler}>
         {title}

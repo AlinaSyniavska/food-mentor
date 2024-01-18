@@ -16,10 +16,10 @@ export const MeasureTab: FC<IProps> = () => {
   const [weight, setWeight] = useState<string>('');
 
   const setMetrics = () => {
+    router.push('/destructiveBehaviors');
+
     console.log(`Height: ${height}`);
     console.log(`Weight: ${weight}`);
-
-    router.push('/destructiveBehaviors');
   };
 
   return (
