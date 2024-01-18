@@ -6,6 +6,7 @@ import { Card, CardBody } from '@nextui-org/react';
 
 import { ArrowBack } from '@/components/ArrowBack/ArrowBack';
 import { PageHeader } from '@/components/PageHeader/PageHeader';
+import Physical_exercise from '/public/physical_exercise.png';
 
 export default function PhysicalExercise() {
   const activitiesList = [
@@ -61,7 +62,7 @@ export default function PhysicalExercise() {
           <h4 className={'text-sm font-bold'}>How active are you during the day?</h4>
 
           <div className={'flex flex-row justify-between items-center w-full'}>
-            <Image src={'/physical_exercise.png'} alt={'physical_exercise'} width={172} height={275}/>
+            <Image src={Physical_exercise} alt={'physical_exercise'} width={172} height={275}/>
 
             <div className="flex flex-col gap-y-4">
               {
