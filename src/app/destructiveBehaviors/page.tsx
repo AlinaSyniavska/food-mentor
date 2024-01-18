@@ -10,7 +10,6 @@ import { ArrowBack } from '@/components/ArrowBack/ArrowBack';
 import { CustomButton } from '@/components/CustomButton/CustomButton';
 
 export default function DestructiveBehaviors() {
-
   const behaviorsList = [
     {
       id: 1,
@@ -52,7 +51,7 @@ export default function DestructiveBehaviors() {
 
     if (!behaviors.includes(title)) {
       setBehaviors(prevState => [...prevState, title]);
-      card.classList.add('selectedBehavior');
+      card.classList.add('selected');
     } else {
       const behaviorsArr = [...behaviors];
       behaviorsArr.splice(
@@ -61,7 +60,7 @@ export default function DestructiveBehaviors() {
       );
 
       setBehaviors([...behaviorsArr]);
-      card.classList.remove('selectedBehavior');
+      card.classList.remove('selected');
     }
   };
 

@@ -41,7 +41,7 @@ export const MeasureTab: FC<IProps> = () => {
             />
             <Input
               isRequired
-              label="Current Weight(ft)"
+              label="Current Weight(lb)"
               type="number"
               size={'lg'}
               variant={'bordered'}
@@ -60,7 +60,7 @@ export const MeasureTab: FC<IProps> = () => {
           <form className="flex flex-col gap-4">
             <Input
               isRequired
-              label="Height(sm)"
+              label="Height(cm)"
               type="number"
               size={'lg'}
               variant={'bordered'}
@@ -69,7 +69,7 @@ export const MeasureTab: FC<IProps> = () => {
             />
             <Input
               isRequired
-              label="Current Weight(sm)"
+              label="Current Weight(kg)"
               type="number"
               size={'lg'}
               variant={'bordered'}
