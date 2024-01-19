@@ -6,6 +6,13 @@ import { Card, CardBody } from '@nextui-org/react';
 import Image from 'next/image';
 import { useRouter } from 'next/navigation';
 
+import Behavior_1_rest from '/public/behavior_1_rest.png';
+import Behavior_2_tooth from '/public/behavior_2_tooth.png';
+import Behavior_3_soda from '/public/behavior_3_soda.png';
+import Behavior_4_salty_foods from '/public/behavior_4_salty_foods.png';
+import Behavior_5_snacks from '/public/behavior_5_snacks.png';
+import Behavior_6_none from '/public/behavior_6_none.png';
+
 import { ArrowBack } from '@/components/ArrowBack/ArrowBack';
 import { CustomButton } from '@/components/CustomButton/CustomButton';
 
@@ -14,32 +21,32 @@ export default function DestructiveBehaviors() {
     {
       id: 1,
       title: 'I don\'t rest enough',
-      img: '/behavior_1_rest.png',
+      img: Behavior_1_rest,
     },
     {
       id: 2,
       title: 'I have a sweet tooth',
-      img: '/behavior_2_tooth.png',
+      img: Behavior_2_tooth,
     },
     {
       id: 3,
       title: 'I have too much soda',
-      img: '/behavior_3_soda.png',
+      img: Behavior_3_soda,
     },
     {
       id: 4,
       title: 'I eat many salty foods',
-      img: '/behavior_4_salty_foods.png',
+      img: Behavior_4_salty_foods,
     },
     {
       id: 5,
       title: 'I enjoy midnight snacks',
-      img: '/behavior_5_snacks.png',
+      img: Behavior_5_snacks,
     },
     {
       id: 6,
       title: 'None of the above',
-      img: '/behavior_6_none.png',
+      img: Behavior_6_none,
     },
   ];
 
